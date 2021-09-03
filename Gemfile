@@ -45,3 +45,4 @@ gem 'rack-cors'
 gem 'jb'
 
 gem "pg_search", "~> 2.3"
+gem "ransack"

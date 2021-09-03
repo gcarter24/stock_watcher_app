@@ -1,12 +1,14 @@
-@stocks.map do |stock| { id: stock.id,
-                         symbol: stock.symbol,
-                         name: stock.name,
-                         last_sale: stock.last_sale,
-                         net_change: stock.net_change,
-                         percentage_change: stock.percentage_change,
-                         market_cap: stock.market_cap,
-                         country: stock.country,
-                         ipo_year: stock.ipo_year,
-                         volume: stock.volume,
-                         sector: stock.sector,
-                         industry: stock.industry } end
+@stocks.map do |stock|
+  { id: stock.id,
+    symbol: stock.symbol,
+    name: stock.name,
+    last_sale: stock.last_sale,
+    net_change: stock.net_change,
+    percentage_change: stock.percentage_change,
+    market_cap: stock.market_cap,
+    country: stock.country,
+    ipo_year: stock.ipo_year,
+    volume: stock.volume,
+    sector: stock.sector,
+    industry: stock.industry }
+end
