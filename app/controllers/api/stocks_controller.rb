@@ -12,7 +12,7 @@ class Api::StocksController < ApplicationController
   end
 
   def stocks
-    response = HTTP.get("https://sandbox.iexapis.com/stable/stock/IBM/quote?token=#{Rails.application.credentials.secret_api[:api_key]}")
+    response = HTTP.get("https://cloud.iexapis.com/stable/stock/#{params[:search]}/quote?token=#{Rails.application.credentials.secret_api[:api_key]}")
     render json: response.parse
   end
 end
